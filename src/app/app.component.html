@@ -1,21 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="stylediv">
-  <img width="200" height="200" alt="Angular Logo" src="../assets/img/charmi-pic.jpg">
-  <div>
-    Name:- {{ name }}
-  </div>
-  <div>
-    Designation:- {{ designation }}
-  </div>
-  <div>
-    Email:- {{ email }}
-  </div>
-  <div>
-    Contact:- {{ contact }}
-  </div>
+
+<div>
+  <app-server2 [employee]="person"></app-server2>
+  <!-- <app-server2 [employee2]="person2"></app-server2> -->
+  <!-- <app-server2 [name]="name" [designation]="designation"></app-server2> -->
+ 
   
 </div>
-
 
 
 <router-outlet></router-outlet>
