@@ -12,17 +12,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-  person={
+  person=[{
   name : 'Charmi',
   designation : 'Front-end developer',
   email : 'Charmi@gmail.com',
   contact : '8200772753'
-}
-// person2={
-//   name : 'Charvi',
-//   designation : 'Front-end developer',
-//   email : 'Charmi@gmail.com',
-//   contact : '8200772753'
-// }
+},{
+  name : 'Charvi',
+  designation : 'back-end developer',
+  email : 'Charvi@gmail.com',
+  contact : '8200772753'
+}];
 
 }

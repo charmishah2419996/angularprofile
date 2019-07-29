@@ -9,7 +9,7 @@ import { Component, OnInit,Input } from '@angular/core';
 export class Server2Component implements OnInit {
 
   @Input() employee:any;
-  // @Input() employee2:any;
+ 
 
   constructor() { }
 

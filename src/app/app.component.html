@@ -1,11 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div>
-  <app-server2 [employee]="person"></app-server2>
-  <!-- <app-server2 [employee2]="person2"></app-server2> -->
-  <!-- <app-server2 [name]="name" [designation]="designation"></app-server2> -->
+<div *ngFor="let employee of person">
+  <app-server2 [employee]="employee"></app-server2>
  
-  
 </div>
 
 
