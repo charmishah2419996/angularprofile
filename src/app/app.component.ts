@@ -16,12 +16,16 @@ export class AppComponent {
   name : 'Charmi',
   designation : 'Front-end developer',
   email : 'Charmi@gmail.com',
-  contact : '8200772753'
+  contact : '8200772753',
+  companyname:'funstay',
+  address:'HSR'
 },{
   name : 'Charvi',
   designation : 'back-end developer',
   email : 'Charvi@gmail.com',
-  contact : '8200772753'
+  contact : '8200772753',
+  companyname:'riversand',
+  address:'HSR2'
 }];
 
 }
