@@ -9,21 +9,27 @@ import { Component, OnInit,Input } from '@angular/core';
 export class Server2Component implements OnInit {
 
   @Input() employee:any;
-  values='';
-  values2='';
+  values:any;
 
 
   myFunction(employee) {
    
-   this.values2=employee.address;
-    this.values =employee.companyname;
+    this.values = {
+     comname:employee.companyname,
+     add:employee.address
+    }
+    
   }
+
  
 
   constructor() { }
 
   ngOnInit() {
-
+    this.values = {
+      comname:'',
+      add:''
+     }
   }
 
 }
