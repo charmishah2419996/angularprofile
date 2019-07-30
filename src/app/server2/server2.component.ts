@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @Component({
@@ -10,20 +11,29 @@ export class Server2Component implements OnInit {
 
   @Input() employee:any;
   values:any;
+  
 
 
+
+
+  constructor(
+    
+    private router: Router
+    
+  ) {}
   myFunction(employee) {
    
     this.values = {
      comname:employee.companyname,
      add:employee.address
     }
+    this.router.navigate(['/moreinfo']);
     
   }
 
- 
-
-  constructor() { }
+  // constructor() {
+  //   private router: Router;
+  //  }
 
   ngOnInit() {
     this.values = {
