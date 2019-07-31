@@ -1,0 +1,37 @@
+
+
+<form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        name:<input formControlName="name">
+        <div>{{ contactForm.name }}</div>
+        <div  *ngIf="f.name.touched && f.name.errors?.required">First Name is required</div>
+    </div>
+     <div>
+        Designation:<input formControlName="designation">
+        <div  *ngIf="f.designation.touched && f.designation.errors?.required">designation is required</div>
+     </div>
+     <div>
+        Email-id:<input formControlName="email">
+        <div  *ngIf="f.email.touched && f.email.errors?.required">emaild is required</div>
+        <div  *ngIf="f.email.touched && f.email.errors?.email">emaild is invalid</div>
+     </div>
+     <div>
+        Contact:<input formControlName="contact">
+        <div  *ngIf="f.contact.touched && f.contact.errors?.required">contact is required</div>
+        <div  *ngIf="f.contact.errors?.minlength">mnimum 10 digit</div>
+     </div>
+     <div>
+       Salary:<input  formControlName="salary">
+       <div  *ngIf="f.salary.touched && f.salary.errors?.required">salary is required</div>
+     </div>
+    
+  <button type="submit" >Add</button>
+  <div>{{invalidtext}}</div>
+
+</form>
+
+
+
+
+

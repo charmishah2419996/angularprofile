@@ -9,10 +9,12 @@ export class MoreinfoComponent implements OnInit {
 
  
   @Input() values:any;
+  
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    console.log("values",this.values);
   }
 
 }

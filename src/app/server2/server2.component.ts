@@ -9,20 +9,15 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class Server2Component implements OnInit {
 
-  @Input() employee:any;
-  values:any;
-  
-
-
+@Input() employee:any;
+values:any;
 
 
   constructor(
-    
-    private router: Router
-    
-  ) {}
+     private router: Router
+    ) {}
+
   myFunction(employee) {
-   
     this.values = {
      comname:employee.companyname,
      add:employee.address
@@ -30,12 +25,7 @@ export class Server2Component implements OnInit {
     this.router.navigate(['/moreinfo']);
     
   }
-
-  // constructor() {
-  //   private router: Router;
-  //  }
-
-  ngOnInit() {
+ngOnInit() {
     this.values = {
       comname:'',
       add:''
